@@ -2,8 +2,8 @@ echo Award Backend Installer By Nego#1000
 echo Credits : https://nego-dev.com
 sleep 2
 echo Nodejs Installing...
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-nvm install node #
+sudo apt-get install nodejs
+sudo apt-get install npm
 sleep 2
 echo NodeJS Installed
 sleep 2
@@ -17,14 +17,15 @@ echo Git Installed
 sleep 2
 mkdir /home/awardBackend
 cd /home/awardBackend
-git clone https://github.com/HelloAward/api.awardbot.me.git
+curl -o backend.zip https://github.com/HelloAward/api.awardbot.me/archive/refs/heads/main.zip
 echo Infrastructure Installed !
 sleep 2
 echo UnZipping...
+sudo apt install unzip
 sleep 2
 echo UnZipped
+unzip backend.zip
 
-cd api.awardbot.me
 sleep 2
 echo Installation Finished
 ##ftp
@@ -52,6 +53,7 @@ echo Ftp Installed
 sleep 2
 echo Packages Installing...
 sleep 2
+cd backend
 npm i
 sleep 4
 echo Running..
