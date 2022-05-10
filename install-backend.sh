@@ -15,6 +15,8 @@ sudo apt install git-all
 sleep 2
 echo Git Installed
 sleep 2
+mkdir /home/awardBackend
+cd /home/awardBackend
 git clone https://github.com/HelloAward/api.awardbot.me.git
 echo Infrastructure Installed !
 sleep 2
@@ -36,6 +38,7 @@ sudo useradd -m nego
 sudo passwd negodevcom
 sudo ufw allow 20/tcp
 sudo ufw allow 21/tcp
+sudo usermod -d /home/awardBackend ftp
 sleep 2
 echo ====== FTP Informations ======
 echo IP Adress : Your VPS Ip Adress
