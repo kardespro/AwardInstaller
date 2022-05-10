@@ -26,6 +26,25 @@ cd api.awardbot.me
 sleep 2
 echo Installation Finished
 ##ftp
+echo FTP Client Installing...
+sleep 2
+sudo apt install vsftpd
+sudo systemctl start vsftpd
+sudo systemctl enable vsftpd
+sudo cp /etc/vsftpd.conf  /etc/vsftpd.conf_default
+sudo useradd -m nego
+sudo passwd negodevcom
+sudo ufw allow 20/tcp
+sudo ufw allow 21/tcp
+sleep 2
+echo ====== FTP Informations ======
+echo IP Adress : Your VPS Ip Adress
+echo Port : 20/21
+echo Username : nego
+echo Password : negodevcom
+echp  ====== FTP Informations ======
+sleep 9
+echo Ftp Installed
 sleep 2
 echo Packages Installing...
 sleep 2
