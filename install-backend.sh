@@ -46,7 +46,7 @@ echo IP Adress : Your VPS Ip Adress
 echo Port : 20/21
 echo Username : nego
 echo Password : negodevcom
-echp  ====== FTP Informations ======
+echo  ====== FTP Informations ======
 sleep 9
 echo Ftp Installed
 sleep 2
