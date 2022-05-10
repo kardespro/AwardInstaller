@@ -39,6 +39,7 @@ sudo passwd negodevcom
 sudo ufw allow 20/tcp
 sudo ufw allow 21/tcp
 sudo usermod -d /home/awardBackend ftp
+sudo systemctl restart vsftpd.service
 sleep 2
 echo ====== FTP Informations ======
 echo IP Adress : Your VPS Ip Adress
